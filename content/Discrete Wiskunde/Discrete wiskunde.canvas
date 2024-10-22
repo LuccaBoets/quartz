@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"00beeb739a69068f","type":"group","x":-120,"y":-160,"width":1920,"height":1960,"label":"Inleidende begrippen"},
+		{"id":"bdc872fa0066cc40","type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Propositie logica.md","x":-80,"y":-120,"width":400,"height":400},
+		{"id":"66eee1b2c1c78bfd","x":-80,"y":320,"width":400,"height":400,"type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Kwantoren.md"},
+		{"id":"ca06a2c1334a0382","x":360,"y":880,"width":400,"height":400,"type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Relaties.md"},
+		{"id":"a3eb2eb697bf50f3","x":360,"y":1360,"width":400,"height":400,"type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Invers beeld.md"},
+		{"id":"c8df994c5202e8dc","x":800,"y":1360,"width":400,"height":400,"type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Beeld.md"},
+		{"id":"e32e849b0c11bdca","x":800,"y":880,"width":400,"height":400,"type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Functies.md"},
+		{"id":"a605b74ba7f656c7","x":-80,"y":880,"width":400,"height":400,"type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Cartesisch product.md"},
+		{"id":"96a08fc6d835fe75","x":1360,"y":440,"width":400,"height":400,"type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Geinduceerde functie, restrictie en corestrictie.md"},
+		{"id":"13dc8f4b73b4cf99","x":1360,"y":1360,"width":400,"height":400,"type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Samenstelling van functies.md"},
+		{"id":"a277621f3ff113a0","x":1360,"y":880,"width":400,"height":400,"type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Inverse functie.md"},
+		{"id":"b746df46e79bd08b","type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Verzamelingen.md","x":800,"y":-120,"width":400,"height":400},
+		{"id":"a653360a21737a40","type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Bewerkingen met verzamelingen.md","x":800,"y":320,"width":400,"height":400},
+		{"id":"7357866823c338c5","type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Deelverzamelingen.md","x":1240,"y":-120,"width":400,"height":400},
+		{"id":"24c165ccfa2cb0c8","type":"file","file":"02 VUB/Semester 1/Discrete Wiskunde/Permenant/Inleidende begrippen/Oneindige unies en doorsneden.md","x":360,"y":-120,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"c61ba26df6b0f61e","fromNode":"7357866823c338c5","fromSide":"left","toNode":"b746df46e79bd08b","toSide":"right"},
+		{"id":"803ec2c6ddab4e9a","fromNode":"a653360a21737a40","fromSide":"top","toNode":"b746df46e79bd08b","toSide":"bottom"},
+		{"id":"299f597bf3abe36c","fromNode":"24c165ccfa2cb0c8","fromSide":"right","toNode":"b746df46e79bd08b","toSide":"left"},
+		{"id":"981d11ba42ba1ea7","fromNode":"ca06a2c1334a0382","fromSide":"left","toNode":"a605b74ba7f656c7","toSide":"right"},
+		{"id":"3ac2746924747b2f","fromNode":"ca06a2c1334a0382","fromSide":"right","toNode":"e32e849b0c11bdca","toSide":"left"},
+		{"id":"a99492e9e02b8d65","fromNode":"c8df994c5202e8dc","fromSide":"top","toNode":"e32e849b0c11bdca","toSide":"bottom"},
+		{"id":"13b0ec7e0909fc71","fromNode":"a3eb2eb697bf50f3","fromSide":"right","toNode":"c8df994c5202e8dc","toSide":"left"},
+		{"id":"2f91eac8e1ce32fa","fromNode":"96a08fc6d835fe75","fromSide":"left","toNode":"e32e849b0c11bdca","toSide":"right"},
+		{"id":"78910d7245f5d82b","fromNode":"13dc8f4b73b4cf99","fromSide":"left","toNode":"e32e849b0c11bdca","toSide":"right"},
+		{"id":"7d786333aa34d4e9","fromNode":"a277621f3ff113a0","fromSide":"left","toNode":"e32e849b0c11bdca","toSide":"right"}
+	]
+}
