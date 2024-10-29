@@ -4,10 +4,11 @@
 
 Als we n identieke objecten verdelen over k dozen met n > k, dan is er minstens **1 doos met minstens twee objecten**. 
 
-Bewijs. Uit het ongerijmde (U.H.O.) 
-Veronderstel van niet. Dan is er in elke doos hoogstens ´e´en object. Zij m het aantal lege dozen (met nul objecten dus). Dan zijn er in totaal k − m dozen met elk juist ´e´en object. Vermits alle objecten verdeeld werden, geldt 
-$$n = k − m ≤ k < n$$
-en dat is een tegenspraak
+> [!abstract] Bewijs
+> Uit het ongerijmde (U.H.O.) 
+> Veronderstel van niet. Dan is er in elke doos hoogstens 1 object. Zij m het aantal lege dozen (met nul objecten dus). Dan zijn er in totaal k − m dozen met elk juist ´e´en object. Vermits alle objecten verdeeld werden, geldt 
+> $$n = k − m ≤ k < n$$
+> en dat is een tegenspraak
 
 > [!Voorbeeld]-
 > **Voorbeeld 1:**
@@ -34,7 +35,7 @@ Een verzameling A heeft $n \in N$ elementen indien er een bijectie bestaat van *
 Voor elke eindige verzameling X geldt
 $$|P(X)|=2^{|X|}$$
 ### Somprincipe
-Zijn A1, A2, . . . , Ak twee aan twee **disjuncte** eindige verzamelingen. Dan geldt:
+Zijn $A_1, A_2, ... , A_k$ twee aan twee **disjuncte** eindige verzamelingen. Dan geldt:
 $$|A_{1}\cup A_{2}\cup\dotsb\cup A_{k}|=|A_{1}|+|A_{2}|+\dotsb+|A_{k}|$$
 
 > [!Abstract] Bewijs
@@ -82,28 +83,52 @@ Iets in 2 richting tellen geeft het zelfde antwoord.
 > Analoog met $R_b := \dots$ voor de rijen.
 
 > [!Voorbeeld]-
-> ![[Pasted image 20241002114912.png]]
-
+> De dodecaëder heeft 12 zijvlakken met elk 5 ribben. Elke ribbe ligt op 2 zijvlakken, dus we kunnen de koppels (ribbe, zijvlak) op twee manieren tellen (dubbeltelling):
+> 1. Vanuit het aantal ribben: $\text{\# ribben} \times 2$
+ >2. Vanuit het aantal zijvlakken:  $12 \times 5$
+> 
+> Deze gelijkstellen geeft:
+> $\text{\# ribben} \times 2 = 12 \times 5$
+> 
+> Hieruit volgt:
+> $\text{\# ribben} = \frac{12 \times 5}{2} = 30$
+> 
+> Dus, de dodecaëder heeft 30 ribben.
 
 ## Teltechnieken met producten
+
+|                   | **Teruglegging**                         | **Zonder teruglegging**          |
+| ----------------- | ---------------------------------------- | -------------------------------- |
+| **Volgorde**      | Woorden $n^m$                            | Permutaties $\frac{n!}{(n-m)!}$  |
+| **Geen volgorde** | Herhalingscombinaties $\binom{n+k-1}{k}$ | Deelverzamelingen $\binom{n}{k}$ |
+
 ### Woorden
+Zijn X , Y eindige verzamelingen, met |X | = m en |Y | = n. Dan geldt:
+$$\#\{\text{functies} :X\longrightarrow Y\}=n^{m}.$$
 
+> [!Abstract] Bewijs
+> Elke functie komt overeen met een m-tupel van Y en we weten:
+> $$|Y^{m}|=|Y\times Y\times\cdots\times Y|=|Y|^{m}.$$
+> 
 
-...
+Met **teruglegging** en **volgorde** is van belang
+
 > [!Voorbeeld]-
-> Voorbeeld: Het aantal woorden van lengte 3 in ons alfabet is 263.
-> Voorbeeld: Het aantal deelverzamelingen van een verzameling met n elementen is 2n.
+> **Voorbeeld**: Het aantal woorden van lengte 3 in ons alfabet is $26^3$.
+> **Voorbeeld**: Het aantal deelverzamelingen van een verzameling met n elementen is $2^n$.
 
 ### Injecties tellen
-cties tellen Als we geen herhaling toelaten, bekijken we woorden waarin de functie $[m] → Y$ injectief is. Hoe tellen we het aantal injectieve functies?
+Als we **geen herhaling toelaten**, bekijken we woorden waarin de functie $[m] → Y$ **injectief** is.
 
-Het aantal **geordende keuzes** van m objecten uit n **zonder herhaling** is
 $$n(n-1)(n-2)\cdot\cdot\cdot\cdot(n-m+1).$$
 
-Bewijs. Om een woord van lengte $m$ te vormen, kiezen we achtereenvolgens $m$ verschillende elementen uit $Y$. Voor de eerste letter zijn er $n$ keuzes, voor de tweede $n - 1$, voor de derde $n - 2$, enzovoort, tot we de laatste letter kiezen uit $n - m + 1$ overblijvende opties.
+> [!Abstract] Bewijs
+> Om een woord van lengte $m$ te vormen, kiezen we achtereenvolgens $m$ verschillende elementen uit $Y$. Voor de eerste letter zijn er $n$ keuzes, voor de tweede $n - 1$, voor de derde $n - 2$, enzovoort, tot we de laatste letter kiezen uit $n - m + 1$ overblijvende opties.
 
-Het aantal keuzes in voorgaande stelling is bijgevolg kort te noteren als 
+Het aantal keuzes is:
 $${\frac{n!}{(n-m)!}}$$
+
+Met **zonder teruglegging** en **volgorde** is van belang
 
 > [!Voorbeeld]-
 > Op hoeveel manieren kan ik 6 studenten uit een klas van 20 kinderen kiezen en in een rij tegen het bord zetten?
@@ -118,22 +143,82 @@ $${\frac{n!}{(n-m)!}}$$
 > De berekening levert het totale aantal manieren op om 6 studenten uit 20 te kiezen en in een rij te zetten.
 
 ### Bijecties tellen
-Als $n = m$, dan kunnen we $n$ objecten op $n!$ verschillende manieren ordenen, waarbij de volgorde van belang is. Dit betekent dat we bijecties $[n] \leftrightarrow Y$ tellen. 
+Als **$n = m$**, dan kunnen we $n$ objecten op **$n!$** verschillende manieren ordenen. Dit betekent dat we bijecties $[n] \leftrightarrow Y$ tellen. 
 
-Als $f : [n] \to Y$ injectief is en $|Y| = n$, dan is $f$ een bijectie. Het selecteren van $n$ objecten uit $n$ kan worden gezien als een permutatie van die objecten. Een 
+Als $f : [n] \to Y$ injectief is en $|Y| = n$, dan is $f$ een bijectie.
+**permutatie:** $f : Y \to Y$ 
+$$n! \ \text{als} \ (n = k)$$
 
-bijectie $f : Y \to Y$ die een verzameling naar zichzelf afbeeldt, wordt een permutatie genoemd. Met $|Y| = n$ hebben we een bijectie $g : [n] \to Y$. 
-
-De samenstelling $f \circ g : [n] \to Y$ is ook een ordening van $Y$. Twee bijecties $f$ en $g$ leiden tot een permutatie $g \circ f^{-1} : Y \to Y$, omdat bijecties inverteerbaar zijn.
-
+Met **zonder teruglegging** en **volgorde** is van belang
 ### Deelverzamelingen tellen
-...
+Zij $A$ een verzameling en $k ∈ \mathbb{N}$. Een k-deelverzameling van $A$ is een deelverzameling met $k$ elementen.
+$$\binom{n}{k} = \frac{n!}{(n-k)!k!}$$
+
+> [!Abstract] Bewijs
+> $|A| = n$, kies k-elementen uit A met ordening, dan eenzelfde deelverzameling meerdere keren voorkomen.
+> $$S=\{({ B},f)\mid B\subset A,|B|=k\ \mathrm{en~}F\ \mathrm{een~ordening~van~}B\}$$
+> $|S|$ tellen op 2 manieren:
+> 1. $|S|=x\times k!$
+> 	$x$ is het **aantal k-deelverzamelingen**
+> 	$k!$ is het **aantal ordeningen** van een $k$-deelverzamelingen
+> 
+> 2. $|S|={\bf1}\times\frac{n!}{(n-k)!}$
+> 	$\frac{n!}{(n − k)!}$ **manieren $k$ elementen kiezen** uit $A$ met volgorde
+> 
+> We hebben dus
+> $$x={\frac{n!}{(n-k)!\ k!}}= \binom{n}{k}.$$
+
+$${\binom{n}{n-k}}={\binom{n}{k}}$$
+Met **zonder teruglegging** en **geen volgorde**
+
+### de driehoek van Pascal
+
+![[02 VUB/Semester 1/Discrete Wiskunde/Permenant/Img/Capture.png]]
+
+> [!Abstract] Bewijs
+> $\binom{n}{k} =$ aantal k-deelverzameling in $A$ met $n$ elementen
+> kies $a \in A$
+> 
+> $$D_{\in}:=\{B\in{\binom{A}{k}}\mid d\in B\}\;{\mathrm{~en~}}\;D_{\not{\in}}:=\{B\in{\binom{A}{k}}\mid a\not\in B\}.$$
+> - $D_{\in}$: disjuncte unie met $A$
+> - $D_{\not{\in}}$: *disjuncte unie zonder $A$*
+> 
+> We hebben dus ${\binom{n}{k}}=\left|\binom{A}{k}\right|=|D_{\epsilon}|+|D_{\not{\epsilon}}|.$
+> $$|D_{\in}| = A \backslash  \{a\} + a \rightarrow \binom{n-1}{k-1} \ \text{manieren}$$
+> - $A \backslash  \{a\}$: verzameling **k-1 elementen**
+> 
+> $$|D_{\not{\in}}| = A \backslash  \{a\} \rightarrow \binom{n-1}{k} \ \text{manieren}$$
+> 
 
 ### Herhalingscombinaties
-...
+Een voorstelling van aabbcdd is •• | •• | • | ••
+aantal streepjes: **$n-1$**
+aantal plaatsen: **$n+k-1$**
 
+We weten **${\binom{n+k-1}{n-1}} = \binom{n+ k - 1}{k}$** zodat het aantal herhalingscombinaties van k objecten uit n gelijk is aan:
 
+$$\binom{n+ k - 1}{k} = \frac{(n + k - 1)!}{(n-1)!k!}$$
+
+Met **teruglegging** en **geen volgorde**
 ## Binomium van Newton
 ...
 
 ## Inclusie en exclusie
+Zijn $A_1, A_2, . . . , A_n$ eindige verzamelingen en stel $A = \{A_1, A_2, ... , A_n\}$. Dan hebben we
+$$\left|\bigcup A\right|=\left|A_{1}\cup A_{2}\cup\dotsb\cup A_{n}\right|=\alpha_{1}-\alpha_{2}+\alpha_{3}-\dotsb+(-1)^{n-1}\alpha_{n}$$
+met
+$$\alpha_{i}=\sum_{B\in{\binom{A}{i}}}\left|\bigcap B\right|.$$
+![[Inclusion-exclusion.svg.png]]
+
+> [!Example] Bewijs
+> Zij $x ∈ ⋃ A$, dan $∃k ∈ \mathbb{N}_0$ zodat x behoort tot juist k van de n verzamelingen in A.
+> $$\begin{array}{r l}{k}&{{}{\mathrm{~in~}}\ \alpha_{1}=|A_{1}|+|A_{2}|+\cdots+|A_{n}|}\\ {\binom{k}{2}}&{{}{\mathrm{~in~}}\ \ \alpha_{2}}\\ \vdots & \vdots\end{array}$$
+> $${\binom{k}{1}}-{\binom{k}{2}}+{\binom{k}{3}}-\cdots+(-1)^{k-1}{\binom{k}{k}}=1.$$
+> 
+> > [!Abstract]- 
+> > - **$\binom{k}{1}$**: telt het element in elke verzameling.
+> > - **$-\binom{k}{2}$**: corrigeert voor dubbel tellen in twee verzamelingen.
+> > - **$+\binom{k}{3}$**: herstelt de correctie voor drie verzamelingen, enz.
+> > 
+> > De term $\binom{k}{1}$ (ook geschreven als k) geeft het aantal manieren waarop een element kan **voorkomen** in precies **één van de k verzamelingen**. Dit betekent dat we voor elk van de k verzamelingen afzonderlijk tellen of het element daarin voorkomt.
+> 
