@@ -83,6 +83,24 @@ Dan is P(n) waar voor alle n ∈ N.
 
 ## De $\varphi$-functie van Euler
 
+## Equivalentierelaties en partities
+
+## Congruenties
+
+## Modulair rekenen
+
+**Notatie**. De verzameling $\{E_0, E_1, . . . , E_{m−1}\}$ noteren we $\mathbb{Z}_m$.
+
+### Inverteerbare elementen $\mathbb{Z}_m$
+
+x E Zm heet inverteerbaar indien er een $y \in \mathbb{Z}_m$ bestaat met
+x x y = 1 (dus x x y =m 1).
+
+
+
+> [!Voorbeeld]-
+> In Z6 is 1 inverteerbaar, want 1 × 1 = 1. 2 is niet inverteerbaar want 2 × 0 = 0, 2 × 1 = 2, 2 × 2 = 4, 2 × 3 = 0, 2 × 4 = 2, 2 × 5 = 4. Dus 6 ∃y ∈ Z6 : 2 × y = 1.
+
 ## De chinese reststelling
 $$ x \equiv a_1 M_1 y_1 + \dots + a_n M_n y_n \mod m $$
  > [!Abstract]- Definitie uitleg
@@ -110,6 +128,7 @@ $$ x \equiv a_1 M_1 y_1 + \dots + a_n M_n y_n \mod m $$
 
 ## Public key cryptography
 
+$b = \varphi(m)$
 
 > [!Voorbeeld]-
 > 
@@ -219,5 +238,3 @@ $$ x \equiv a_1 M_1 y_1 + \dots + a_n M_n y_n \mod m $$
 > 
 > **Resultaat**
 > Het ontcijferde bericht $m$ is: $\boxed{8}$
-> 
-> 

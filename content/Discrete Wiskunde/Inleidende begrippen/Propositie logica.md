@@ -1,5 +1,5 @@
 ## Propositie logica
-basis [[02 VUB/Semester 1/Logica en formele systemen/Permenant/Propositie logica|Propositie logica]] 
+basis [[02 VUB/Semester 1/Logica en formele systemen/Permenant/Propositie logica/Propositie logica|Propositie logica]] 
 **Negatie van de implicatie**: ¬(p ⇒ q) is equivalent met p ∧ ¬q 
 **Contrapositie van de implicatie**: p ⇒ q is equivalent met ¬q ⇒ ¬p
 
