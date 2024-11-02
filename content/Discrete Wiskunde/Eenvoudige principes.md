@@ -195,6 +195,10 @@ Een voorstelling van aabbcdd is •• | •• | • | ••
 aantal streepjes: **$n-1$**
 aantal plaatsen: **$n+k-1$**
 
+•• | •• | • | ••
+n = opties
+k = aantal bolletjes
+
 We weten **${\binom{n+k-1}{n-1}} = \binom{n+ k - 1}{k}$** zodat het aantal herhalingscombinaties van k objecten uit n gelijk is aan:
 
 $$\binom{n+ k - 1}{k} = \frac{(n + k - 1)!}{(n-1)!k!}$$
